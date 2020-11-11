@@ -27,5 +27,13 @@ router_trans_node.patch('/trans_node', controller_trans_node.patchAll);
 
 router_trans_node.delete('/trans_node', controller_trans_node.deleteAll);
 
+// By id
+router_trans_node.get('/trans_node/:id', controller_trans_node.getById);
+
+router_trans_node.put('/trans_node/:id', controller_trans_node.putById);
+
+router_trans_node.patch('/trans_node/:id', controller_trans_node.patchById);
+
+router_trans_node.delete('/trans_node/:id', controller_trans_node.deleteById);
 
 module.exports = router_trans_node;

@@ -53,6 +53,46 @@ const controller_value_node = {
         response.status(200);
         response.send();
     },
+    
+    /**
+     * @method controller_value_node#getAll - GET BY ID
+     * @param {Express.Request} request - Express server request
+     * @param {Express.Response} response - Express server response
+     */
+    getById(request, response) {
+        response.status(200);
+        response.send();
+    },
+
+    /**
+     * @method controller_value_node#putOne - PUT BY ID
+     * @param {Express.Request} request - Express server request
+     * @param {Express.Response} response - Express server response
+     */
+    putById(_, response) {
+        response.status(501);
+        response.send();
+    },
+
+    /**
+     * @method controller_value_node#patchAll - PATCH BY ID
+     * @param {Express.Request} request - Express server request
+     * @param {Express.Response} response - Express server response
+     */
+    patchById(_, response) {
+        response.status(200);
+        response.send();
+    },
+
+    /**
+     * @method controller_value_node#deleteAll - DELETE BY ID
+     * @param {Express.Request} request - Express server request
+     * @param {Express.Response} response - Express server response
+     */
+    deleteById(_, response) {
+        response.status(200);
+        response.send();
+    },
 };
 
 module.exports = controller_value_node;

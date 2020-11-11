@@ -27,5 +27,13 @@ router_value_node.patch('/value_node', controller_value_node.patchAll);
 
 router_value_node.delete('/value_node', controller_value_node.deleteAll);
 
+// By id
+router_value_node.get('/value_node/:id', controller_value_node.getById);
+
+router_value_node.put('/value_node/:id', controller_value_node.putById);
+
+router_value_node.patch('/value_node/:id', controller_value_node.patchById);
+
+router_value_node.delete('/value_node/:id', controller_value_node.deleteById);
 
 module.exports = router_value_node;
