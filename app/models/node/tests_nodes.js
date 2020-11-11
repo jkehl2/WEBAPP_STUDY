@@ -1,5 +1,5 @@
 const {
-    Node
+    Node, Transition
 } = require('./index');
 
 // NodeLinks.create({

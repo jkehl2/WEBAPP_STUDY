@@ -4,16 +4,17 @@ const {
     Model
 } = require('sequelize');
 
+
 /**
  * @version 1.0.0
- * @description Node class model.
+ * @description Value_trans class model.
  */
-class Node extends Model {
-}
+class Value_trans extends Model {}
 
-Node.init({}, {
+Value_trans.init({}, {
     sequelize,
-    tableName: 'nodes'
+    tableName: 'value_trans'
 });
 
-module.exports = Node;
+
+module.exports = Value_trans;

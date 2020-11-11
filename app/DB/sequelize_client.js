@@ -20,7 +20,7 @@ const sequelize_client = new Sequelize(
 );
 
 sequelize_client.sync({
-    force: false
+    force: true
 });
 
 module.exports = sequelize_client;
