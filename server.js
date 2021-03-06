@@ -46,6 +46,7 @@ const corsUserConfig = require('./config/corsUser.json');
 const cors = require('cors');
 app.use(cors(corsUserConfig));
 
+// Use express-session to manage user session and Redis to store it in app cache
 const session = require('express-session');
 let RedisStore = require('connect-redis')(session);
 const randomString = require('randomstring');

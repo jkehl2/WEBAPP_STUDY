@@ -11,7 +11,7 @@
 JS NODE dev practice project.
 
 ## How to use it
-1. Have postgresql database and configure .env file
+1. Have postgresql and redis database enable and configure .env file
 2. Run ./app/DB/create_DB.sql
 3. Run command line :
 
